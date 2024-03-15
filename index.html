@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Bike page with Gsap</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+      
+        <div class="top"></div>
+        <div class="bottom"></div>
+
+
+        <div class="nav-bar">
+            <ul>
+                <li>
+                     <div class="account">
+                        <i class="ri-heart-fill"></i>
+                        <span>Account</span>
+                    
+                    </div>
+                </li>
+                   <li>
+                        <div class="logo">
+                         <span>Focus</span>
+                        </div>
+                   </li>
+                       <li>
+                         <div class="search">
+                            <input type="text" placeholder="search">
+                            <i class="ri-search-line"></i>
+                       </div>
+                   </li>
+                       <li>
+                         <div class="menu-btn">
+                         <span class="one"></span>
+                         <span class="two"></span>
+                     </div>
+                   </li>
+              </ul>
+         </div>
+
+     <img class="product-img" src="./pngfind.com-hero-bikes-png-1630143.png" alt="">
+
+     <div class="product-text">
+        <h1 class="product-title"> Mountain<br><span>bike.</span></h1>
+        <p class="product-subtitle">Explore The Adventure</p>
+     </div>
+
+     <div class="tag-line">
+        <span>Discover Products</span>
+
+     </div>
+
+     <div class="arrow-icon">
+    <ul>
+          <li>
+            <i class="ri-arrow-left-s-line"></i>
+           </li>
+        <li>
+            <i class="ri-arrow-right-s-line"></i>
+        </li>
+    </ul> 
+        </div>
+
+        <div class="media">
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        TweenMax.from(".top",1.6,{ 
+            Delay: 0.4,
+            height: 0,
+            ease: Expo.easeInOut 
+        })
+
+        TweenMax.from(".bottom",1.6,{ 
+            Delay: 0.4,
+            height: 0,
+            ease: Expo.easeInOut 
+        })
+
+        TweenMax.from(".account",1,{
+             Delay:1,
+             opacity:0,
+             x:-150,
+             ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".logo",1,{
+             Delay:1.2,
+             opacity:0,
+             x:-20,
+             ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".menu-btn",1,{
+             Delay:1.4,
+             opacity:0,
+             x:-20,
+             ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".search",1,{
+             Delay:1.6,
+             opacity:0,
+             x:-150,
+             ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".product-img",2,{
+             Delay:1.5,
+             opacity:0,
+             y:10,
+             ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".product-title",2,{
+             Delay:2,
+             opacity:0,
+             y:200,
+             ease:Circ.easeInOut
+        })
+
+        TweenMax.from(".product-title span",2,{
+             Delay:3,
+             opacity:0,
+             y:-50,
+             ease:Expo.easeInOut
+        })
+
+        TweenMax.from(".product-subtitle",2,{
+             Delay:3.5,
+             opacity:0,
+             y:20,
+             ease:Circ.easeInOut
+        })
+
+        TweenMax.from(".tag-line",1,{
+             Delay:3,
+             opacity:0,
+             x:-20,
+             ease:Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".media ul li",1,{
+             Delay:4,
+             opacity:0,
+             x:-120,
+             ease:Power3.easeInOut
+        },0.08)
+
+        TweenMax.staggerFrom(".arrow-icon ul li",1,{
+             Delay:4.4 ,
+             opacity:0,
+             x:50,
+             ease:Power3.easeInOut
+        },0.08)
+
+    </script>
+
+</body>
+</html>

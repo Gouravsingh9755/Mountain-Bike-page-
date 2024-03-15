@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+ 
+ html, body{
+ 
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+     color: #fff;
+     font-family: serif;
+ }
+
+ .top, .bottom{
+
+    position: absolute;
+    height: 50%;
+    width: 100%;
+ }
+
+ .top{
+
+    background-color: #1aa6b7;
+ }
+
+ .bottom{
+
+    background-color: #d3d9dd;
+    top: 50%;
+ }
+
+ .nav-bar ul{
+
+    list-style: none;
+    display: flex;
+ }
+
+ .nav-bar ul li{
+
+    list-style: none;
+    line-height: 46px;
+    padding: 16px 32px;
+    margin: 0 16px;
+
+}
+
+.account{
+
+    position: fixed;
+    left: 40px;
+
+}
+
+.account span{
+
+    margin-left: 1px;
+    font-size: 15px;
+}
+
+.logo{
+
+    position: fixed;
+    left: 780px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.search{
+
+    position: fixed;
+    right: 180px;
+    
+
+    
+}
+
+::placeholder{
+
+    color: #fff;
+}
+
+input{
+    height:25px;
+    width: 150px;
+    border: 2px solid #d3d9dd;
+    border-radius: 50px;
+    background-color: transparent;
+    padding-left: 35%;
+    outline: none;
+    
+
+    
+}
+
+.ri-search-line{
+
+    position: absolute;
+    right: 120px;
+}
+
+
+
+.menu-btn{
+
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 30px;
+    padding: 16px 0 0 0;
+
+}
+
+.one, .two{
+
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.two{
+
+    margin-top: 12px;
+}
+
+.product-img{
+
+    /* height: 400px; */
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-40%);
+    
+}
+
+
+.product-text{
+
+    position: absolute;
+    top: 45%;
+    line-height: 1;
+    left: 65%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.product-title{
+
+    font-size: 100px;
+    color: #d3d9dd;
+}
+
+.product-title span{
+
+    position: absolute;
+    left: 155px;
+    color: #1aa6b7;
+}
+
+.product-subtitle{
+
+    position: relative;
+    bottom: -103px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #555555;
+    letter-spacing: 5px;
+}
+
+.tag-line{
+
+    position: fixed;
+    top: 22px;
+    left: 160px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.arrow-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow-icon ul{
+
+    list-style: none;
+}
+
+.arrow-icon ul li{
+
+    display: inline-block;
+    padding: 9px ;
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: #555555;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.arrow-icon ul li:hover{
+    background-color: #1aa6b7;
+    color: #000;
+
+}
+
+
+.media{
+
+    position: absolute;
+    bottom: 27px;
+    left: 130px;
+}
+
+.media ul li{
+    color: black;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.media ul li:hover{
+
+    /* border: 0.5px solid #fff; */
+    scale: 1.2;
+    transition: all ease 1.6s;
+    font-size: 15px;
+    
+
+}
+
+
+
+
+
+
+
+@media only screen and(max-width: 750px){
+
+    top, .bottom{
+        display: none;
+
+    }
+    html, body{
+
+        width: 100%;
+        height: 100%;
+        background-color: #d3d9dd;
+        color: #000;
+        /* overflow: hidden; */
+    }
+
+    .one, two{
+
+        background: #000;
+        left: -36px;
+    }
+
+    .logo{
+        left: 223px;
+    }
+
+    .search{
+        right: 219px  ;
+    }
+
+    .product-img{
+        width: 400px;
+        top: 34%;
+        left: 0%;
+    }
+
+    .product-text{
+        top: 66%;
+        left: 36%;
+    }
+
+    .product-title{
+        font-size: 70px;
+        color: #000;
+    }
+
+    .product-title span{
+        left: 386px;
+        top: 0;
+        color: #1aa6b7;
+    }
+
+    .product-subtitle{
+       bottom: -15px;
+       right: -74px;
+
+    }
+
+    .tag-line{
+        display: none;
+    }
+
+    .media{
+
+        bottom: 147px;
+        left: 149px;
+    }
+
+    .arrow-icon{
+        display: none;
+    }
+
+}
